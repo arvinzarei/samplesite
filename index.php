@@ -11,6 +11,5 @@
 <!-- Start JS -->
 <?php include_once "_js.js" ?>
 <!-- End JS -->  
-
 </body>
 </html>
