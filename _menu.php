@@ -21,7 +21,7 @@
 		</li>
     <li><a href="#">درباره ما</a></li>
     <div class="left-nav">
-        <a href="#"><span class="fas fa-user-circle"> ورود</span></a>
+        <a href="admin/login.php"><span class="fas fa-user-circle"> ورود</span></a>
         <a href="#"><span class="fas fa-check-circle "> ثبت نام</span></a>
     </div> 
   </ul>
