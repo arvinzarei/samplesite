@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "LoginAdmin.php";
 $query=LoginAdmin::SelectUser();
 $item=[];
@@ -14,6 +15,12 @@ if ($flag==0){
     LoginAdmin::InsertUser($username,$final);
 }
 }
+if (isset($_SESSION['admin'])){
+    header("location:admin.php");
+}
+if (isset($_SESSION['wrong'])){
+    echo $_SESSION['wrong'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -28,7 +35,7 @@ if ($flag==0){
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="">
+        <form action="check.php" method="post">
           <h1>ساخت حساب کاربری</h1>
           <br/>
           <input type="text" name="name" placeholder="نام" />
@@ -38,10 +45,10 @@ if ($flag==0){
         </form>
       </div>
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="check.php" method="post">
           <h1>ورود</h1>
           <br/>
-          <input type="email" name="email" placeholder="ایمیل" />
+          <input type="text" name="username" placeholder="نام کاربری" />
           <input type="password" name="password" placeholder="رمز عبور" />
           <a href="#">فراموشی رمز عبور</a>
 

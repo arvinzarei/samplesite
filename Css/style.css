@@ -19,7 +19,7 @@ nav ul li:hover > ul {
 
 nav ul {
     width: 100%;
-	background: #112f44;
+	background: #901721;
 	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
 	list-style: none;
 	position: relative;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li:hover a {
-	color: red;
+	color: black;
 }
 
 nav ul li a {
@@ -49,8 +49,8 @@ nav ul li a {
 }
 
 nav ul ul {
-	background:#112f44;
-	border-radius: 0px;
+	background:#901721;
+	border-radius: 0;
 	padding: 0;
 	position: absolute;
 	top: 100%;
@@ -84,7 +84,7 @@ nav ul ul ul {
        color: white;
 }
 .left-nav a:hover{
-    color: red;
+    color: black;
 }
 .left-nav a{
     margin:10px;
