@@ -6,6 +6,7 @@ $item=[];
 $flag=0;
 while ($item=mysqli_fetch_assoc($query)){
 $flag=1;
+}
 if ($flag==0){
     $username="arvinzarei";
     $password="arvinzarei";
@@ -13,7 +14,6 @@ if ($flag==0){
     $salt=$hash."156498723";
     $final=sha1($salt);
     LoginAdmin::InsertUser($username,$final);
-}
 }
 if (isset($_SESSION['admin'])){
     header("location:admin.php");
