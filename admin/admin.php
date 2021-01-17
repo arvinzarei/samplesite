@@ -20,13 +20,13 @@
         <div class="left-nav">
             <a href="../index.php" target="_blank"><span class="fas fa-desktop"> نمایش وب سایت </span></a>
             <a href="logout.php"><span class="fas fa-power-off"> خروج </span></a>
-        </div>s
+        </div>
     </ul>
 </nav>
 <!-- End Menu-->
 <!--Start Create Form Setting-->
 <div class="Seo-form">
-<form action="" method="post">
+<form action="insertseo.php" method="post">
         <input type="text" name="title" placeholder="Title Website" autofocus><br/>
         <input type="text" name="author" placeholder="Author Name"><br/>
         <textarea name="description" placeholder="Your Description..."></textarea><br/>
