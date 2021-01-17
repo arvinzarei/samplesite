@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2377573c-34a3-4af1-ad74-751cbfd7ea52" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/LoginAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/LoginAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -45,7 +46,9 @@
       <option name="presentableId" value="Default" />
       <updated>1610545448540</updated>
       <workItem from="1610545486964" duration="85000" />
-      <workItem from="1610549745831" duration="13291000" />
+      <workItem from="1610549745831" duration="13576000" />
+      <workItem from="1610829290408" duration="77000" />
+      <workItem from="1610874740961" duration="9215000" />
     </task>
     <servers />
   </component>
@@ -62,6 +65,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

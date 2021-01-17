@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+	box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -8,7 +9,10 @@ a{
 nav {
 	text-align: center;
 }
-
+nav ul li img{
+	padding-top: 10px;
+	padding-right: 5px;
+}
 nav ul ul {
 	display: none;
 }
@@ -76,6 +80,7 @@ nav ul ul ul {
 	right: 100%;
 	top:0;
 }
+/*-------------- Start Left nav ----------------*/
 .left-nav{
     font-size: 20px;
     float: left;
@@ -90,5 +95,64 @@ nav ul ul ul {
     margin:10px;
 }
 .left-nav span{
-    padding-top: 12px;
+	font-size: 16px;
+    padding-top: 16px;
 }
+/*----------End Left nav  -----------*/
+/*----------Start Seo-Form-----------*/
+.Seo-form{
+	width: 70%;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color:#f2f2f2;
+	margin: 0px auto;
+	text-align: center;
+}
+.Seo-form input[type=text]{
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	outline: none;
+	width: 300px;
+	height: 70px;
+	border: none;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+.Seo-form input[type=text]:focus{
+	border: none;
+	outline: none;
+	width: 310px;
+}
+.Seo-form textarea{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	outline: none;
+	width: 300px;
+	height: 130px;
+	border: none;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+.Seo-form textarea:focus{
+	border: none;
+	outline: none;
+	width: 310px;
+}
+.Seo-form input[type=text]::placeholder{
+	text-align: center;
+}
+.Seo-form textarea::placeholder{
+	text-align: center;
+}
+.Seo-form Button{
+	color: white;
+	width: 100px;
+	height: 50px;
+	background-color: #901721;
+}
+.Seo-form Button:hover{
+	background-color: tomato;
+}
+/*---------- End Seo-Form-----------*/
