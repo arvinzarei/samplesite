@@ -72,7 +72,7 @@ nav ul ul li a {
 	color: #fff;
 }	
 nav ul ul li a:hover {
-	background: #112f44;
+	background: #901721;
 }
 		
 nav ul ul ul {
@@ -104,7 +104,7 @@ nav ul ul ul {
 	width: 70%;
 	padding-top: 35px;
 	padding-bottom: 30px;
-	background-color:#f2f2f2;
+	background-color:#E5E4E2;
 	margin: 0px auto;
 	text-align: center;
 }
@@ -156,3 +156,58 @@ nav ul ul ul {
 	background-color: tomato;
 }
 /*---------- End Seo-Form-----------*/
+/*Style For Table*/
+.table-responsive {
+	padding-top: 10px;
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.table-responsive > .table-bordered {
+	border: 0;
+}
+thead {
+	display: table-header-group;
+}
+.table {
+	border-collapse: collapse !important;
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #212529;
+}
+.table td,
+.table th {
+	background-color: #fff !important;
+	padding: 0.75rem;
+	vertical-align: top;
+	border-top: 1px solid #dee2e6;
+	text-align: center;
+}
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #dee2e6;
+}
+.table tbody + tbody {
+	border-top: 2px solid #dee2e6;
+}
+.table-bordered {
+	border: 1px solid #dee2e6;
+}
+.table-bordered th,
+.table-bordered td {
+	border: 1px solid #dee2e6 !important;
+}
+.table input[type=submit]{
+	width: 60px;
+	background-color: #901721;
+	border: none;
+	height: 30px;
+	color: white;
+}
+.table input[type=submit]:hover{
+	color: black;
+	background-color: tomato;
+	font-weight: bold;
+}
+/* End Style For Table*/

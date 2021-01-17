@@ -2,7 +2,7 @@
 <html dir="rtl">
   <head>
       <?php include_once 'admin/SeoWebsite.php';
-      $query=SeoWebsite::SelectSeo();
+      $query=SeoWebsite::SelectSeoID();
       $item=[];
       $item=mysqli_fetch_assoc($query);
       ?>
