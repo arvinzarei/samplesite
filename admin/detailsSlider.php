@@ -1,5 +1,6 @@
 <?php include_once "_headeradmin.php"; ?>
-<body>
+<body style="background-color:#E5E4E2">
+<!-- Start Menu-->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand"><img src="../images/icon/dashboard.png" alt="Dashboard img"></a>
@@ -13,7 +14,7 @@
                         تنظیمات
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="detailsSeo.php">جزئیات سئو</a></li>
+                        <li><a class="dropdown-item" href="#">جزئیات سئو</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                     </ul>
@@ -34,14 +35,47 @@
 </nav>
 <!-- End Menu-->
 <!--Start Create Form Setting-->
-<div class="Seo-form">
-<form action="insertseo.php" method="post">
-        <input type="text" name="title" placeholder="Title Website" autofocus><br/>
-        <input type="text" name="author" placeholder="Author Name"><br/>
-        <textarea name="description" placeholder="Your Description..."></textarea><br/>
-        <textarea name="keywords" placeholder="Enter your keywords..."></textarea><br/>
-        <button>Submit</button>
-</form>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Image Name</th>
+            <th>Image</th>
+            <th>Caption</th>
+            <th>link</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        include_once 'Slider.php';
+        $query=Slider::SelectSlider();
+        $item=[];
+        while ($item=mysqli_fetch_assoc($query)): ?>
+            <tr>
+                <td><?php echo $item['id']; ?></td>
+                <td><?php echo $item['image']; ?></td>
+                <td><img src="../images/slider/<?php echo $item['image']; ?>" width="50px" height="50px" </td>
+                <td><?php echo $item['caption']; ?></td>
+                <td><?php echo $item['link']; ?></td>
+                <td>
+                    <form action="deleteseo.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+                <td>
+                    <form action="deleteseo.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                        <input type="submit" value="Update">
+                    </form>
+                </td>
+            </tr>
+        <?php endwhile; ?>
+        </tbody>
+    </table>
 </div>
 <!--End Form Setting-->
 <?php include_once '_jsadmin.php';?>

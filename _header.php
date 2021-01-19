@@ -18,5 +18,6 @@
     <link type="text/css" rel="stylesheet" href="bootstrap/dist/css/bootstrap.rtl.min.css">
     <link href="bootstrap/dist/css/style.css" rel="stylesheet" />
     <link href="bootstrap/dist/css/all.min.css" rel="stylesheet" />
+    <link href="bootstrap/dist/css/amazingslider-1.css" rel="stylesheet" />
 
   </head>

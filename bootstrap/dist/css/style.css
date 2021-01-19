@@ -73,6 +73,11 @@ a{
 .Seo-form Button:hover{
 	background-color: tomato;
 }
+.Seo-form input[type=file]{
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
 /*---------- End Seo-Form-----------*/
 /*Style For Table*/
 .table-responsive {
