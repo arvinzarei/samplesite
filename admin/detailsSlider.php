@@ -61,13 +61,15 @@
                 <td><?php echo $item['caption']; ?></td>
                 <td><?php echo $item['link']; ?></td>
                 <td>
-                    <form action="deleteseo.php" method="post">
+                    <form action="DeleteSlider.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+<!--                        برای حذف عکس باید آدرس عکس را هم بفرستیم-->
+                        <input type="hidden" name="path" value="../images/slider/<?php echo $item['image']; ?>">
                         <input type="submit" value="Delete">
                     </form>
                 </td>
                 <td>
-                    <form action="deleteseo.php" method="post">
+                    <form action="EditSlider.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
                         <input type="submit" value="Update">
                     </form>
