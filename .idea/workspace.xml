@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2377573c-34a3-4af1-ad74-751cbfd7ea52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/samplesite.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/samplesite.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6295dace-d6a2-4d56-8ed9-32a6b4c1796c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6295dace-d6a2-4d56-8ed9-32a6b4c1796c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/Slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/Slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/detailsSlider.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/detailsSlider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/_slider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,8 @@
       <workItem from="1610970917860" duration="2823000" />
       <workItem from="1611047344260" duration="19993000" />
       <workItem from="1611140007619" duration="496000" />
-      <workItem from="1611330505555" duration="7299000" />
+      <workItem from="1611330505555" duration="11899000" />
+      <workItem from="1611379694003" duration="342000" />
     </task>
     <servers />
   </component>

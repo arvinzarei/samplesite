@@ -1,6 +1,6 @@
 <!-- Insert to your webpage where you want to display the slider -->
 <div class="slider">
-<div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;width:1100px;margin:0 auto;">
+<div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;width:1100px;margin:20px auto;">
     <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
         <ul class="amazingslider-slides" style="display:none;">
             <?php

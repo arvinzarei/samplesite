@@ -12,6 +12,10 @@
 <?php include_once '_slider.php';?>
 <!-- End Slider -->
 
+<!--Create Team Us-->
+<?php include_once '_team.php'; ?>
+<!--End Team Us-->
+
 <!-- Start JS -->
 <?php include_once "_js.php"; ?>
 <!-- End JS -->  

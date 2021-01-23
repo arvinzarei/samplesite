@@ -22,7 +22,7 @@
                     <a class="nav-link" href="FormSlider.php">اسلایدر</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">گالری</a>
+                    <a class="nav-link" href="FormTeam.php">تیم ما</a>
                 </li>
             </ul>
             <form class="d-flex">
