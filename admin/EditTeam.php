@@ -10,10 +10,10 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        تنظیمات
+                        اسلایدر
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="detailsSeo.php">جزئیات سئو</a></li>
+                        <li><a class="dropdown-item" href="detailsSlider.php">جزئیات اسلایدر</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                     </ul>
@@ -28,9 +28,8 @@
                         <li><a class="dropdown-item" href="detailsTeam.php">جزئیات تیم ما</a></li>
                     </ul>
                 </li>
-                
                 <li class="nav-item">
-                    <a class="nav-link" href="FormSlider.php">اسلایدر</a>
+                    <a class="nav-link" href="detailsSeo.php">تنظیمات</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">گالری</a>
@@ -46,12 +45,20 @@
 <!-- End Menu-->
 <!--Start Create Form Setting-->
 <div class="Seo-form">
-    <form action="InsertTeam.php" method="post" enctype="multipart/form-data">
+    <?php
+    include_once 'TeamCms.php';
+    $id=$_POST['id'];
+    $query=TeamCms::selectTeamID($id);
+    $item=[];
+    $item=mysqli_fetch_assoc($query);
+    ?>
+    <form action="UpdateTeam.php" method="post" enctype="multipart/form-data">
         <input type="file" name="image"><br/>
-        <input type="text" name="title" placeholder="Title of post..."><br/>
-        <textarea name="summary" placeholder="Enter your summary..."></textarea><br/>
-        <textarea name="content" class="editor"  placeholder="Enter your content..."></textarea><br/>
-        <button>Submit</button>
+        <input type="text" name="title" value="<?php echo $item['title']; ?>"><br/>
+        <textarea name="summary"><?php echo $item['summary']; ?></textarea><br/>
+        <textarea name="content" class="editor"><?php echo $item['content']; ?></textarea><br/>
+        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+        <button>Update</button>
     </form>
 </div>
 <!--End Form Setting-->
@@ -59,7 +66,7 @@
 <script src="../ckeditor/ckeditor.js"></script>
 <script src="../ckeditor/adapters/jquery.js"></script>
 <script>
-$('textarea.editor').ckeditor();
+    $('textarea.editor').ckeditor();
 </script>
 </body>
 </html>

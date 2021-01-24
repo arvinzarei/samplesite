@@ -1,5 +1,6 @@
 <?php include_once "_headeradmin.php"; ?>
-<body>
+<body style="background-color:#E5E4E2">
+<!-- Start Menu-->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand"><img src="../images/icon/dashboard.png" alt="Dashboard img"></a>
@@ -13,7 +14,7 @@
                         تنظیمات
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="detailsSeo.php">جزئیات سئو</a></li>
+                        <li><a class="dropdown-item" href="#">جزئیات سئو</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                     </ul>
@@ -28,7 +29,6 @@
                         <li><a class="dropdown-item" href="detailsTeam.php">جزئیات تیم ما</a></li>
                     </ul>
                 </li>
-                
                 <li class="nav-item">
                     <a class="nav-link" href="FormSlider.php">اسلایدر</a>
                 </li>
@@ -45,21 +45,51 @@
 </nav>
 <!-- End Menu-->
 <!--Start Create Form Setting-->
-<div class="Seo-form">
-    <form action="InsertTeam.php" method="post" enctype="multipart/form-data">
-        <input type="file" name="image"><br/>
-        <input type="text" name="title" placeholder="Title of post..."><br/>
-        <textarea name="summary" placeholder="Enter your summary..."></textarea><br/>
-        <textarea name="content" class="editor"  placeholder="Enter your content..."></textarea><br/>
-        <button>Submit</button>
-    </form>
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Image</th>
+            <th>title</th>
+            <th>summary</th>
+            <th>Delete</th>
+            <th>Update</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        include_once 'TeamCms.php';
+        $query=TeamCms::SelectTeam();
+        $item=[];
+        while ($item=mysqli_fetch_assoc($query)): ?>
+            <tr>
+                <td><?php echo $item['id']; ?></td>
+                <td><?php echo $item['image']; ?></td>
+                <td><img src="../images/team/<?php echo $item['image']; ?>" width="50px" height="50px" </td>
+                <td><?php echo $item['title']; ?></td>
+                <td><?php echo $item['summary']; ?></td>
+                <td>
+                    <form action="DeleteTeam.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                        <!--                        برای حذف عکس باید آدرس عکس را هم بفرستیم-->
+                        <input type="hidden" name="path" value="../images/team/<?php echo $item['image']; ?>">
+                        <input type="submit" value="Delete">
+                    </form>
+                </td>
+                <td>
+                    <form action="EditTeam.php" method="post">
+                        <input type="hidden" name="id" value="<?php echo $item['id']; ?>">
+                        <input type="submit" value="Update">
+                    </form>
+                </td>
+            </tr>
+        <?php endwhile; ?>
+        </tbody>
+    </table>
 </div>
 <!--End Form Setting-->
 <?php include_once '_jsadmin.php';?>
-<script src="../ckeditor/ckeditor.js"></script>
-<script src="../ckeditor/adapters/jquery.js"></script>
-<script>
-$('textarea.editor').ckeditor();
-</script>
 </body>
 </html>
