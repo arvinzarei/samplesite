@@ -13,10 +13,11 @@ while ($item=mysqli_fetch_assoc($query)){
     if ($item['username']==$username && $item['password']==$final){
         $flag=1;
         $_SESSION['admin']=$username;
+        $_SESSION['id']=$item['id'];
         header("location:admin.php");
     }
-    if ($flag==0){
-        $_SESSION['wrong']="نام کاربری و کلمه عبور شما اشتباه می باشد";
-        header("location:login.php");
-    }
+}
+if ($flag==0){
+    $_SESSION['wrong']="نام کاربری و کلمه عبور شما اشتباه می باشد";
+    header("location:login.php");
 }

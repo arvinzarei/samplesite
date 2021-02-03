@@ -28,6 +28,7 @@
             </ul>
             <form class="d-flex">
                 <a href="../index.php" target="_blank"><span class="fas fa-desktop"> نمایش وب سایت </span></a>
+                <a href="administrator.php"s><span class="fas fa-cogs"> پروفایل </span></a>
                 <a href="logout.php"><span class="fas fa-power-off">  خروج  </span></a>
             </form>
         </div>

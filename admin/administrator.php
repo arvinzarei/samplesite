@@ -29,7 +29,7 @@ session_start();
             </ul>
             <form class="d-flex">
                 <a href="../index.php" target="_blank"><span class="fas fa-desktop"> نمایش وب سایت </span></a>
-                <a href="administrator.php"s><span class="fas fa-cogs"> پروفایل </span></a>
+                <a href="../index.php" target="_blank"><span class="fas fa-cogs"> پروفایل </span></a>
                 <a href="logout.php"><span class="fas fa-power-off">  خروج  </span></a>
             </form>
         </div>
@@ -37,14 +37,20 @@ session_start();
 </nav>
 <!-- End Menu-->
 <!--Start Create Form Setting-->
+<?php
+include_once 'LoginAdmin.php';
+$id=$_SESSION['id'];
+$query=LoginAdmin::SelectUserID($id);
+$item=[];
+$item=mysqli_fetch_assoc($query);
+?>
 <div class="Seo-form">
-<form action="insertseo.php" method="post">
-        <input type="text" name="title" placeholder="Title Website" autofocus><br/>
-        <input type="text" name="author" placeholder="Author Name"><br/>
-        <textarea name="description" placeholder="Your Description..."></textarea><br/>
-        <textarea name="keywords" placeholder="Enter your keywords..."></textarea><br/>
+    <form action="UpdateAdministrator.php" method="post">
+        <input type="text" name="username"  value="<?php echo $item['username']; ?>"><br/>
+        <input type="text" name="password" ><br/>
+        <input type="hidden" name="id"  value="<?php echo $id ;?>"><br/>
         <button>Submit</button>
-</form>
+    </form>
 </div>
 <!--End Form Setting-->
 <?php include_once '_jsadmin.php';?>
