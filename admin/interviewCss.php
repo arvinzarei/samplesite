@@ -12,10 +12,10 @@ session_start();
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        تنظیمات
+                        Interview Css
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="detailsSeo.php">جزئیات سئو</a></li>
+                        <li><a class="dropdown-item" href="detailsSeo.php">جزئیات css</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                     </ul>
@@ -25,9 +25,6 @@ session_start();
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="FormTeam.php">تیم ما</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="interviewCss.php">Interview</a>
                 </li>
             </ul>
             <form class="d-flex">
@@ -41,13 +38,16 @@ session_start();
 <!-- End Menu-->
 <!--Start Create Form Setting-->
 <div class="Seo-form">
-<form action="insertseo.php" method="post">
-        <input type="text" name="title" placeholder="Title Website" autofocus><br/>
-        <input type="text" name="author" placeholder="Author Name"><br/>
-        <textarea name="description" placeholder="Your Description..."></textarea><br/>
-        <textarea name="keywords" placeholder="Enter your keywords..."></textarea><br/>
+    <form action="inserInterviewCss.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="image"><br/>
+        <input type="color" name="color"><br/>
+        <input type="text" name="height"><br/>
+        <select name="font" style="margin-bottom: 20px">
+            <option value="Yekan">BYekan</option>
+            <option value="BElham">BElham</option>
+        </select><br/>
         <button>Submit</button>
-</form>
+    </form>
 </div>
 <!--End Form Setting-->
 <?php include_once '_jsadmin.php';?>

@@ -1,3 +1,9 @@
+@font-face{font-family:'Yekan';src:url('../fonts/BYekan.ttf') format('truetype'),
+    url('../fonts/BYekan.eot?#') format('eot'), url('../fonts/BYekan.woff') format('woff');
+  font-style:normal;font-weight:normal;}
+@font-face{font-family:'BElham';src:url('../fonts/BElham.ttf') format('truetype'),
+url('../fonts/BElham.eot?#') format('eot'), url('../fonts/BElham.woff') format('woff');
+  font-style:normal;font-weight:normal;}
 *{
     padding: 0;
     margin: 0;
