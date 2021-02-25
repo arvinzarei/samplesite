@@ -11,17 +11,26 @@ url('../fonts/BElham.eot?#') format('eot'), url('../fonts/BElham.woff') format('
 }
 a{
   color: black;
-    text-decoration: none;
+  text-decoration: none;
 }
 .navbar{
-  background-color: #901721 !important;
+  background-color: darkslategrey !important;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+.navbar-light .navbar-nav .nav-link{
+  color:white !important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color:red !important;
 }
 .d-flex a{
   color: white!important;
   padding-left: 10px;
 }
 .d-flex a:hover{
-  color: black!important;
+  color:red!important;
 }
 /*----------Start Seo-Form-----------*/
 .Seo-form{
@@ -29,7 +38,7 @@ a{
 	padding-top: 35px;
 	padding-bottom: 30px;
 	background-color:#E5E4E2;
-	margin: 0px auto;
+	margin: 15px auto;
 	text-align: center;
 }
 .Seo-form input[type=text]{

@@ -23,7 +23,7 @@
                     <a class="nav-link" href="FormSlider.php">اسلایدر</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">گالری</a>
+                    <a class="nav-link" href="interviewCss.php">InterView</a>
                 </li>
             </ul>
             <form class="d-flex">

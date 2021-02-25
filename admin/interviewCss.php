@@ -40,8 +40,12 @@ session_start();
 <div class="Seo-form">
     <form action="inserInterviewCss.php" method="post" enctype="multipart/form-data">
         <input type="file" name="image"><br/>
-        <input type="color" name="color"><br/>
-        <input type="text" name="height"><br/>
+        <div class="form-group">
+            <label for="height" class="cont">color :</label>
+            <input type="color" name="color" class="form-control" id="color"><br/>
+        </div>
+        <label for="height">Height</label>
+        <input type="text" name="height" id="height"><br/>
         <select name="font" style="margin-bottom: 20px">
             <option value="Yekan">BYekan</option>
             <option value="BElham">BElham</option>
